@@ -1,0 +1,788 @@
+/* line 1, ../sass/style.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, ../sass/style.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 27, ../sass/style.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 30, ../sass/style.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 33, ../sass/style.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 38, ../sass/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'existencelight';
+  src: url(../fonts/existence-light-webfont.woff2) format("woff2"), url(../fonts/existence-light-webfont.woff2) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latobold';
+  src: url(../fonts/lato-bold-webfont.woff2) format("woff2"), url(../fonts/lato-bold-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latohairline';
+  src: url(../fonts/lato-hairline-webfont.woff2) format("woff2"), url(../fonts/lato-hairline-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latoitalic';
+  src: url(../fonts/lato-italic-webfont.woff2) format("woff2"), url(../fonts/lato-italic-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latolight';
+  src: url(../fonts/lato-light-webfont.woff2) format("woff2"), url(../fonts/lato-light-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latoregular';
+  src: url(../fonts/lato-regular-webfont.woff2) format("woff2"), url(../fonts/lato-regular-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 93, ../sass/style.scss */
+a, a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'latolight', sans-serif;
+}
+
+/* line 94, ../sass/style.scss */
+header {
+  background: url("../img/head_bg.jpg") no-repeat center top;
+  min-height: 1100px;
+}
+
+/* line 95, ../sass/style.scss */
+p {
+  font-family: 'latohairline', sans-serif;
+}
+
+/* line 96, ../sass/style.scss */
+.headertitle {
+  text-align: center;
+  margin-top: 50px;
+}
+/* line 98, ../sass/style.scss */
+.headertitle p {
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+
+/* line 100, ../sass/style.scss */
+h1 {
+  font-size: 90px;
+  font-family: 'existencelight', sans-serif;
+  color: #ffffff;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+/* line 102, ../sass/style.scss */
+h1 span {
+  color: #9f449b;
+}
+
+/* line 104, ../sass/style.scss */
+.h1-description {
+  font-family: 'latohairline', sans-serif;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+/* line 105, ../sass/style.scss */
+.center, .left, .right {
+  letter-spacing: 20px;
+}
+
+/* line 106, ../sass/style.scss */
+.center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* line 107, ../sass/style.scss */
+.left {
+  text-align: left;
+}
+
+/* line 108, ../sass/style.scss */
+.right {
+  text-align: right;
+}
+
+/* line 109, ../sass/style.scss */
+.icon-wrapper {
+  background: url("../img/frame.png") no-repeat center;
+  width: 168px;
+  height: 183px;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: normal;
+}
+
+/* line 110, ../sass/style.scss */
+.icon-wrapper span {
+  display: block;
+  font-family: 'latoregular', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* line 111, ../sass/style.scss */
+.icon-wrapper:hover {
+  background: url("../img/purple_frame_full.png") no-repeat center;
+}
+
+/* line 112, ../sass/style.scss */
+.icon {
+  margin-top: 40px;
+}
+
+/* line 113, ../sass/style.scss */
+.scroll {
+  background: url(../img/frame.png) no-repeat center;
+  background-size: cover;
+  width: 86px;
+  height: 93px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 114, ../sass/style.scss */
+.scroll:hover {
+  background: url("../img/purple_frame_full.png") no-repeat center;
+  background-size: cover;
+}
+
+/* line 115, ../sass/style.scss */
+.check {
+  margin-top: 40px;
+}
+
+/* line 116, ../sass/style.scss */
+.block-2 {
+  overflow: hidden;
+}
+
+/* line 117, ../sass/style.scss */
+.logo {
+  padding: 55px 0;
+  float: left;
+  font-family: 'existencelight', sans-serif;
+  font-size: 30px;
+  color: #676767;
+}
+/* line 119, ../sass/style.scss */
+.logo span {
+  color: #9f449b;
+}
+
+/* line 121, ../sass/style.scss */
+.menu-wrapper {
+  float: right;
+}
+/* line 123, ../sass/style.scss */
+.menu-wrapper ul {
+  margin-top: 70px;
+  text-align: right;
+}
+/* line 124, ../sass/style.scss */
+.menu-wrapper li {
+  display: inline-block;
+  margin-left: 30px;
+  text-transform: uppercase;
+  font-family: 'latolight', sans-serif;
+  font-size: 18px;
+  color: #676767;
+}
+/* line 125, ../sass/style.scss */
+.menu-wrapper li:hover {
+  color: #9f449b;
+  text-decoration: underline;
+}
+
+/* line 127, ../sass/style.scss */
+.block3-description, .block-3 p {
+  font-family: 'latolight', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  text-transform: none;
+  margin: 45px 0;
+}
+
+/* line 128, ../sass/style.scss */
+.block-3 {
+  background: #eeeeee;
+  padding: 100px 0;
+  text-align: center;
+}
+/* line 130, ../sass/style.scss */
+.block-3 p {
+  font-size: 16px;
+  line-height: 30px;
+}
+/* line 131, ../sass/style.scss */
+.block-3 .icon-wrapper {
+  width: 171px;
+  height: 185px;
+  position: relative;
+  background: url("../img/purple_frame.png") no-repeat center;
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+}
+/* line 139, ../sass/style.scss */
+.block-3 .icon-center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 35%;
+  margin: 0 auto;
+}
+/* line 140, ../sass/style.scss */
+.block-3 .icon-wrapper:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+/* line 142, ../sass/style.scss */
+.block-4 {
+  padding: 100px 0 150px;
+}
+/* line 144, ../sass/style.scss */
+.block-4 p {
+  line-height: 36px;
+  font-size: 16px;
+  text-align: left;
+  text-shadow: 3px 3px 6px rgba(60, 60, 60, 0.7);
+}
+
+/* line 146, ../sass/style.scss */
+.h2-wrapper {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+/* line 147, ../sass/style.scss */
+h2 {
+  font-family: 'existencelight', sans-serif;
+  font-size: 48px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  font-weight: 700;
+}
+/* line 149, ../sass/style.scss */
+h2 span {
+  color: #9f449b;
+}
+
+/* line 151, ../sass/style.scss */
+h2:before {
+  content: "";
+  background: url("../img/h2_before.png") no-repeat center;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/* line 152, ../sass/style.scss */
+h2:after {
+  content: "";
+  background: url("../img/h2_after.png") no-repeat center;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 153, ../sass/style.scss */
+.click-button {
+  background: #9f449b;
+  color: #ffffff;
+  padding: 20px 60px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 110px;
+  font-size: 20px;
+  -webkit-box-shadow: 0px 4px 5px -1px #6b2e68;
+  -moz-box-shadow: 0px 4px 5px -10px #6b2e68;
+  box-shadow: 0px 4px 5px -1px #6b2e68;
+}
+
+/* line 165, ../sass/style.scss */
+.click-button:hover {
+  margin-top: 113px;
+  -webkit-box-shadow: 0px 3px 1px -1px #6b2e68;
+  -moz-box-shadow: 0px 3px 1px -10px #6b2e68;
+  box-shadow: 0px 3px 1px -1px #6b2e68;
+}
+
+/* line 172, ../sass/style.scss */
+.block-5, .block-8 {
+  width: 100%;
+  background: url("../img/quote-bg.jpg") no-repeat center;
+  font-size: 48px;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'latolight', sans-serif;
+  font-weight: 700;
+}
+
+/* line 176, ../sass/style.scss */
+.quote-icon {
+  background: url(../img/frame.png) no-repeat center;
+  width: 166px;
+  height: 179px;
+  text-align: center;
+  background-size: cover;
+  padding-top: 60px;
+  margin: 150px auto 60px auto;
+}
+
+/* line 177, ../sass/style.scss */
+.icon-text {
+  padding-bottom: 100px;
+}
+
+/* line 178, ../sass/style.scss */
+.block-6 {
+  padding: 100px 0 150px;
+}
+
+/* line 179, ../sass/style.scss */
+.slider-wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* line 180, ../sass/style.scss */
+.controls-wrapper {
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* line 182, ../sass/style.scss */
+.controls-wrapper span {
+  font-size: 34px;
+  font-weight: 700;
+  color: #9f449b;
+  margin: 0 5px;
+  width: 65px;
+  height: 70px;
+  background: url("../img/purple_frame.png") center no-repeat;
+  background-size: cover;
+  display: inline-block;
+  padding-top: 10px;
+  text-align: center;
+}
+
+/* line 184, ../sass/style.scss */
+.list {
+  text-align: center;
+}
+
+/* line 185, ../sass/style.scss */
+.slide {
+  display: inline-block;
+  margin: 0 67px 10px;
+  padding-bottom: 10px;
+}
+
+/* line 186, ../sass/style.scss */
+.name {
+  font-family: 'latobold', sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #484848;
+  margin-top: 30px;
+}
+
+/* line 187, ../sass/style.scss */
+.position {
+  font-family: 'latoregular', sans-serif;
+  font-size: 18px;
+  color: #777777;
+  margin-top: 10px;
+}
+
+/* line 188, ../sass/style.scss */
+.social {
+  border: 1px solid #777777;
+  padding: 3px 11px;
+  border-radius: 20px;
+  margin: 0 5px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* line 189, ../sass/style.scss */
+.social:hover {
+  background: #9f449b;
+  border: 1px solid #9f449b;
+}
+
+/* line 190, ../sass/style.scss */
+.block-7 {
+  padding-bottom: 50px;
+}
+
+/* line 192, ../sass/style.scss */
+.progress-wrapper li {
+  margin-bottom: 55px;
+}
+/* line 193, ../sass/style.scss */
+.progress-wrapper span {
+  float: right;
+}
+/* line 194, ../sass/style.scss */
+.progress-wrapper p {
+  margin-bottom: 20px;
+}
+
+/* line 196, ../sass/style.scss */
+progress[value] {
+  border: none;
+  width: 100%;
+  height: 20px;
+  background-color: #9f449b;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+  position: relative;
+}
+
+/* line 203, ../sass/style.scss */
+progress[value]::-webkit-progress-value {
+  border: none;
+  width: 100%;
+  height: 20px;
+  background-color: #9f449b;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+  position: relative;
+}
+
+/* line 210, ../sass/style.scss */
+progress[value]::-webkit-progress-bar {
+  border: none;
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+  position: relative;
+}
+
+/* line 217, ../sass/style.scss */
+progress[value]::-moz-progress-bar {
+  border: none;
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+  position: relative;
+}
+
+/* line 225, ../sass/style.scss */
+.block-9 {
+  padding: 100px 0 150px;
+  background: #eeeeee;
+}
+
+/* line 226, ../sass/style.scss */
+.counters-wrapper {
+  text-align: center;
+}
+
+/* line 227, ../sass/style.scss */
+.number {
+  font-family: 'latolight', sans-serif;
+  font-size: 64px;
+  color: #222222;
+}
+
+/* line 228, ../sass/style.scss */
+.counters-description {
+  font-family: 'latolight', sans-serif;
+  font-size: 16px;
+  color: #777777;
+}
+
+/* line 229, ../sass/style.scss */
+.number-persentage:after {
+  content: '%';
+}
+
+/* line 230, ../sass/style.scss */
+.slider-wrapper-2 {
+  padding-top: 100px;
+  display: inline-block;
+}
+
+/* line 231, ../sass/style.scss */
+.comment {
+  margin: 25px 0;
+  color: #4b4b4b;
+}
+
+/* line 232, ../sass/style.scss */
+.comment-author {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #777777;
+}
+
+/* line 233, ../sass/style.scss */
+.bx-wrapper .bx-pager {
+  text-align: center;
+}
+
+/* line 234, ../sass/style.scss */
+.bx-pager-item {
+  display: inline-block;
+}
+
+/* line 235, ../sass/style.scss */
+.bx-wrapper .bx-pager.bx-default-pager a {
+  text-indent: -9999px;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  border: 1px solid #797979;
+  border-radius: 15px;
+  text-align: center;
+  margin: 0 5px;
+  outline: none;
+  display: block;
+  float: left;
+}
+
+/* line 248, ../sass/style.scss */
+.bx-wrapper .bx-pager.bx-default-pager a:hover {
+  background: #797979;
+  border: 1px solid #d6d6d7;
+}
+
+/* line 249, ../sass/style.scss */
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #9f449b;
+  border: transparent;
+}
+
+/* line 250, ../sass/style.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 251, ../sass/style.scss */
+.tabs {
+  display: inline-block;
+}
+/* line 253, ../sass/style.scss */
+.tabs ul {
+  padding: 0;
+  margin: 0 auto 70px;
+  overflow: hidden;
+  display: inline-block;
+}
+/* line 254, ../sass/style.scss */
+.tabs li {
+  margin: 0 10px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  padding: 10px 20px;
+  background: transparent;
+  color: #000000;
+  border-radius: 3px;
+  border: 1px solid #000000;
+  text-transform: uppercase;
+  font-family: latoregular, sans-serif;
+}
+/* line 267, ../sass/style.scss */
+.tabs li.active, .tabs li.active:hover {
+  background: #9f449b;
+  color: #ffffff;
+  border: transparent;
+}
+/* line 268, ../sass/style.scss */
+.tabs li:hover {
+  background: #d6d6d7;
+}
+
+/* line 270, ../sass/style.scss */
+.tab-wrapper {
+  display: inline-block;
+}
+/* line 272, ../sass/style.scss */
+.tab-wrapper .tab-wrapper-img {
+  position: relative;
+  width: 360px;
+  margin: 0 10px 30px;
+  overflow: hidden;
+  display: block;
+  float: left;
+}
+/* line 273, ../sass/style.scss */
+.tab-wrapper img {
+  display: block;
+}
+
+/* line 275, ../sass/style.scss */
+.tab-img-name {
+  display: block;
+  font-family: latoregular, sans-serif;
+  margin: 25px 0 5px;
+  color: #000000;
+  font-size: 26px;
+}
+
+/* line 276, ../sass/style.scss */
+.tab-img-description {
+  display: block;
+  font-family: latoregular, sans-serif;
+  font-size: 20px;
+  color: #777777;
+}
+
+/* line 277, ../sass/style.scss */
+.block-10 {
+  padding-bottom: 150px;
+}
+/* line 279, ../sass/style.scss */
+.block-10 .h2-wrapper {
+  padding-top: 90px;
+}
+/* line 280, ../sass/style.scss */
+.block-10 .container {
+  margin-top: -60px;
+  background: #ffffff;
+}
+/* line 281, ../sass/style.scss */
+.block-10 .click-button {
+  margin-top: 20px;
+}
+/* line 282, ../sass/style.scss */
+.block-10 .click-button:hover {
+  margin-top: 23px;
+  margin-bottom: -3px;
+}
+
+/* line 284, ../sass/style.scss */
+.block-11 {
+  padding-bottom: 100px;
+}
+
+/* line 285, ../sass/style.scss */
+.input {
+  height: 70px;
+  display: block;
+  margin: 0 0 37px 25px;
+  width: 90%;
+  padding-left: 30px;
+  border: 2px solid #878787;
+  font-family: latoregular, sans-serif;
+  font-size: 20px;
+  color: #000000;
+  outline: none;
+}
+
+/* line 286, ../sass/style.scss */
+.message {
+  padding: 30px 0 200px 30px;
+}
+
+/* line 287, ../sass/style.scss */
+form .click-button {
+  margin: 0 0 0 25px;
+  border: none;
+  outline: none;
+  padding: 15px 40px;
+  font-family: 'latolight', sans-serif;
+}
+
+/* line 288, ../sass/style.scss */
+form .click-button:hover {
+  margin: 3px 0 -3px 25px;
+}
+
+/* line 289, ../sass/style.scss */
+.block-11 p {
+  font-family: latoregular, sans-serif;
+  font-size: 22px;
+  color: #000000;
+  margin-bottom: 35px;
+  line-height: 30px;
+}
+
+/* line 290, ../sass/style.scss */
+.bold {
+  font-weight: 700;
+}
+
+/* line 291, ../sass/style.scss */
+.social-wrapper .social {
+  display: block;
+  width: 75px;
+  height: 75px;
+  padding: 15px 0 0;
+  margin: 30px 50px 0 0;
+  float: left;
+  font-weight: 700;
+  font-size: 30px;
+  border-radius: 50px;
+  text-align: center;
+}
